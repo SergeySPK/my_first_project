@@ -1,0 +1,303 @@
+/* Базовые стили контейнера */
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+}
+
+.header p {
+  color: #718096;
+  font-size: 1rem;
+}
+
+/* Стили формы */
+.registration-form {
+  background: #ffffff;
+  padding: 2.25rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(106, 76, 147, 0.08);
+}
+
+.form-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+  background: #fafbfc;
+}
+
+.form-section legend {
+  font-weight: 600;
+  color: #6a4c93;
+  padding: 0 0.6rem;
+  font-size: 1.05rem;
+}
+
+/* Группы полей */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.form-group label.required::after {
+  content: " *";
+  color: #f51572;
+  font-weight: 700;
+}
+
+/* Поля ввода */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  background: #ffffff;
+  color: #2d3748;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6a4c93;
+  box-shadow: 0 0 0 4px rgba(106, 76, 147, 0.12);
+}
+
+.form-group input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #f51572;
+}
+
+.form-group input:valid:not(:focus) {
+  border-color: #38a169;
+}
+
+/* Сообщения об ошибках */
+.error-message {
+  display: block;
+  color: #f51572;
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+  min-height: 1.3rem;
+}
+
+/* Группы радио и checkbox */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  color: #2d3748;
+  font-size: 0.98rem;
+}
+
+/* Кастомные радио и чекбоксы */
+.radio-label input,
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.radio-custom,
+.checkbox-custom {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border: 2px solid #cbd5e0;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.radio-custom {
+  border-radius: 50%;
+}
+
+.checkbox-custom {
+  border-radius: 5px;
+}
+
+.radio-label input:focus + .radio-custom,
+.checkbox-label input:focus + .checkbox-custom {
+  box-shadow: 0 0 0 4px rgba(106, 76, 147, 0.18);
+}
+
+.radio-label input:checked + .radio-custom {
+  border-color: #6a4c93;
+}
+
+.radio-label input:checked + .radio-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #6a4c93;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-label input:checked + .checkbox-custom {
+  background: #6a4c93;
+  border-color: #6a4c93;
+}
+
+.checkbox-label input:checked + .checkbox-custom::after {
+  content: "✓";
+  color: #ffffff;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+}
+
+/* Кнопки */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.85rem 2.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn-primary {
+  background: #6a4c93;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #563d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(106, 76, 147, 0.25);
+}
+
+.btn-secondary {
+  background: #a0aec0;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: #718096;
+  transform: translateY(-2px);
+}
+
+/* Дополнительные элементы */
+.password-requirements {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+.char-counter {
+  text-align: right;
+  font-size: 0.875rem;
+  color: #718096;
+  margin-top: 0.3rem;
+}
+
+/* Стили для ошибок */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #f51572;
+  background-color: #fff5f5;
+}
+
+.form-group input.error:focus,
+.form-group select.error:focus,
+.form-group textarea.error:focus {
+  box-shadow: 0 0 0 4px rgba(229, 62, 62, 0.12);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem 1rem;
+  }
+
+  .registration-form {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .form-section {
+    padding: 1.25rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    gap: 0.6rem;
+  }
+}
+
+/* Анимации */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.form-group input.error {
+  animation: shake 0.3s ease-in-out;
+}
