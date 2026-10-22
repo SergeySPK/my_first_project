@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Михельсон Сергей — Юрист</title>
+    <!-- Подключаем стили по порядку -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- ===== ХЕДЕР ===== -->
+      <header class="main-header">
+        <div class="logo">Михельсон</div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#services">Виды услуг</a></li>
+            <li><a href="#practice">Обо мне</a></li>
+            <li><a href="#stages">Как я работаю</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <div class="phone">
+            <span class="call-label">Звоните прямо сейчас!</span>
+            <span class="number">+7 495 123-45-67</span>
+          </div>
+          <a href="#" class="btn btn-primary">Заказать звонок</a>
+        </div>
+      </header>
+
+      <!-- ===== ПРЕВЬЮШКА ===== -->
+      <section class="hero">
+        <img
+          class="hero-overlay"
+          src="images/image.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="hero-content">
+          <h1>Михельсон Сергей</h1>
+          <p class="hero-sub">
+            Ваш юрист по уголовному и гражданскому праву. Более 12 лет
+            юридической практики.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Стоимость услуг</a>
+            <a href="#contacts" class="btn btn-outline">Узнать подробности</a>
+          </div>
+        </div>
+        <a
+          href="#services"
+          class="scroll-down"
+          aria-label="Прокрутить к услугам"
+        >
+          <img src="images/80---arrowdown.svg" alt="" />
+        </a>
+      </section>
+
+      <!-- ===== УСЛУГИ ===== -->
+      <section class="services" id="services">
+        <div class="container services-header">
+          <span class="label">Юридические услуги</span>
+          <h2>Представляю ваши интересы</h2>
+          <p>
+            Обратитесь ко мне, в любой жизненной ситуации.<br />Вместе — мы
+            справимся с любой задачей.
+          </p>
+        </div>
+        <div class="services-flex">
+          <div class="service-card">
+            <img
+              class="service-card-bg"
+              src="images/card---1-of-3.png"
+              alt="Семейное право"
+            />
+            <div class="service-card-content">
+              <h3>Семейное право</h3>
+              <p>Разводы, брачные контракты. Вместе мы найдём выход</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img
+              class="service-card-bg"
+              src="images/card---1-of-3-1.png"
+              alt="Уголовное право"
+            />
+            <div class="service-card-content">
+              <h3>Уголовное право</h3>
+              <p>Возьму в работу ваш случай на любом этапе производства</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img
+              class="service-card-bg"
+              src="images/card---1-of-3-2.png"
+              alt="Арбитражный суд"
+            />
+            <div class="service-card-content">
+              <h3>Арбитражный суд</h3>
+              <p>Представительство в арбитражном суде.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ОПЫТ ===== -->
+      <section class="practice" id="practice">
+        <div class="container practice-grid">
+          <h2 class="practice-title">12 лет частной практики</h2>
+          <div class="practice-text">
+            <p>
+              Юристы компании «Юридическое Бюро 812» уже долгие годы ведут
+              успешную практику в предоставлении услуг физическим и юридическим
+              лицам в различных правовых сферах, решая вопросы любой сложности.
+              Наши специалисты осуществляют представительство в государственных
+              органах и обеспечивают защиту интересов в суде. Мы определяем
+              перспективы уже на первичной консультации!
+            </p>
+            <p>
+              Наши юристы имеют большой опыт по представлению интересов структур
+              малого и среднего бизнеса в различных правовых вопросах,
+              возникающих в процессе их деятельности. Наши адвокаты и юристы
+              представляют интересы доверителей в Арбитражном суде
+              Санкт-Петербурга и ЛО, в государственных органах и учреждениях, а
+              также осуществляют комплексное абонентское обслуживание по
+              вопросам любой сложности.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ФОТОГРАФИИ ===== -->
+      <div class="media-gallery">
+        <div class="media-grid">
+          <div class="media-main">
+            <img src="images/image-1.png" alt="Юрист за работой" />
+          </div>
+          <div class="media-side">
+            <div>
+              <img src="images/image-2.png" alt="Юридические документы" />
+            </div>
+            <div>
+              <img src="images/image-3.png" alt="Судебный процесс" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== ФОРМА ДЛЯ СВЯЗИ ===== -->
+      <section class="form-section">
+        <img
+          class="form-bg"
+          src="images/form---02---desktop.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="container form-container">
+          <h2>Свяжитесь со мной</h2>
+          <p>
+            Окажу вам экспертную консультацию, вникну в суть вашей проблемы и
+            подготовлю оптимальный план решения поставленной задачи
+          </p>
+          <form class="form-row">
+            <input type="text" placeholder="Ваше имя" />
+            <input type="tel" placeholder="+7 (000) 000-0000" />
+            <input type="email" placeholder="E-mail" />
+            <button type="submit" class="btn btn-primary">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===== КАК Я РАБОТАЮ ===== -->
+      <section class="stages" id="stages">
+        <div class="container stages-header">
+          <h2>Как я работаю?</h2>
+          <p>
+            Внимательно ознакомьтесь с этапами работ и выберите для себя самое
+            полезное и интересное
+          </p>
+        </div>
+        <div class="stages-list">
+          <div class="stage-item">
+            <div class="stage-number">1</div>
+            <div class="stage-content">
+              <h3>Вникаю в суть дела</h3>
+              <p>
+                Провожу с клиентом подробное собеседование, на котором выясняем
+                все детали и обстоятельства
+              </p>
+            </div>
+          </div>
+          <div class="stage-item">
+            <div class="stage-number">2</div>
+            <div class="stage-content">
+              <h3>Предлагаю стратегии</h3>
+              <p>
+                На основании полученной от клиента информации, готовлю различные
+                варианты действий и согласовываю их с клиентом
+              </p>
+            </div>
+          </div>
+          <div class="stage-item">
+            <div class="stage-number">3</div>
+            <div class="stage-content">
+              <h3>Начинаю работу</h3>
+              <p>
+                После согласования с клиентом стратегии — начинаю активную
+                работу над делом, довожу до результата
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== СПЕЦПРЕДЛОЖЕНИЕ ===== -->
+      <section class="timer-section">
+        <img
+          class="timer-bg"
+          src="images/image-5.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="timer-content">
+          <h2>Бесплатная консультация</h2>
+          <p>
+            Успейте воспользоваться специальным предложением. Получите первую
+            юридическую консультацию совершенно бесплатно!
+          </p>
+          <div class="timer-display">
+            <div class="timer-block">
+              <span class="num">21</span><span class="label">день</span>
+            </div>
+            <div class="timer-block">
+              <span class="num">15</span><span class="label">часов</span>
+            </div>
+            <div class="timer-block">
+              <span class="num">38</span><span class="label">минут</span>
+            </div>
+            <div class="timer-block">
+              <span class="num">40</span><span class="label">секунд</span>
+            </div>
+          </div>
+          <form class="timer-form">
+            <input type="email" placeholder="Введите почту" />
+            <button type="submit" class="btn btn-primary">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===== КЛИЕНТЫ ===== -->
+      <section class="clients">
+        <div class="container clients-header">
+          <h2>Мои клиенты</h2>
+          <p>
+            Мне доверяют самые известные компании<br />Санкт-Петербурга и Москвы
+          </p>
+        </div>
+        <div class="clients-slider-wrapper">
+          <button class="slider-arrow arrow-left" aria-label="Предыдущий слайд">
+            <img src="images/40---arrowleft.svg" alt="" aria-hidden="true" />
+          </button>
+          <div class="clients-logos">
+            <img src="images/rectangle-58.svg" alt="Логотип клиента 1" />
+            <img src="images/rectangle-59.svg" alt="Логотип клиента 2" />
+            <img src="images/rectangle-60.svg" alt="Логотип клиента 3" />
+            <img src="images/rectangle-61.svg" alt="Логотип клиента 4" />
+          </div>
+          <button class="slider-arrow arrow-right" aria-label="Следующий слайд">
+            <img src="images/40---arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- ===== ОТЗЫВЫ ===== -->
+      <section class="reviews" id="reviews">
+        <div class="container reviews-header">
+          <h2>Отзывы</h2>
+          <p>Спасибо всем, кто оставил отзыв о нашей совместной работе</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <img src="images/ellipse-1.png" alt="Юрий Ставничий" />
+            <p>
+              Спасибо, что помогли мне избежать административного ареста, за то,
+              чего я не совершал
+            </p>
+            <div class="review-author">
+              <strong>Юрий Ставничий</strong>
+              <span>г. Санкт-Петербург</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="images/ellipse-1-1.png" alt="Александра Селезнева" />
+            <p>
+              Спасибо Сергею Израилевичу, что помог мне с брако-разводным
+              процессом. Теперь я свободна и открыта для новых знакомств
+            </p>
+            <div class="review-author">
+              <strong>Александра Селезнева</strong>
+              <span>г. Москва</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="images/ellipse-1-2.png" alt="Александра Селезнева" />
+            <p>
+              Спасибо за помощь и представительство в суде по делу с шумным
+              соседом. Положительное решение и компенсация!
+            </p>
+            <div class="review-author">
+              <strong>Александра Селезнева</strong>
+              <span>фотограф</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== КОНТАКТЫ ===== -->
+      <section class="contacts" id="contacts">
+        <div class="contacts-map">
+          <img
+            src="images/image-4.png"
+            alt="Карта: г. Москва, ул. Яузская, дом 15/11"
+          />
+          <div class="pin"></div>
+        </div>
+        <div class="contacts-info">
+          <h2>Контакты</h2>
+          <p>
+            +7 987 654-32-10<br /><span class="highlight"
+              >info@mikhelson.ru</span
+            >
+          </p>
+          <p>г. Москва, метро "Китай город",<br />ул. Яузская, дом 15/11</p>
+          <a href="#" class="btn btn-whatsapp">
+            <img
+              src="images/24---whatsapp.svg"
+              alt="WhatsApp"
+              aria-hidden="true"
+            />
+            Написать в WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== ФУТЕР ===== -->
+      <footer class="footer">
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"
+            ><img src="images/24---facebook.svg" alt=""
+          /></a>
+          <a href="#" aria-label="Instagram"
+            ><img src="images/24---instagram.svg" alt=""
+          /></a>
+          <a href="#" aria-label="Twitter"
+            ><img src="images/24---twitter.svg" alt=""
+          /></a>
+          <a href="#" aria-label="VKontakte"
+            ><img src="images/24---vk.svg" alt="VKontakte"
+          /></a>
+        </div>
+        <nav class="footer-nav">
+          <a href="#services" class="active">Виды услуг</a>
+          <a href="#practice">Обо мне</a>
+          <a href="#stages">Как я работаю</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <p class="footer-copy">© 2020 Михельсон</p>
+      </footer>
+    </div>
+  </body>
+</html>
