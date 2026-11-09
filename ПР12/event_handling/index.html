@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обработка событий JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="main-header">
+        <h1>Практическая работа: Обработка событий</h1>
+        <p>Реализуйте функции в файле events-tasks.js</p>
+      </header>
+
+      <section id="tasks-section">
+        <!-- Задача 1: Базовые события -->
+        <div class="task-area" id="task1">
+          <h3>Задача 1: Базовые обработчики событий</h3>
+          <div class="event-demo">
+            <button id="basic-btn">Нажми меня</button>
+            <div id="basic-output" class="output">Статус: ожидание события</div>
+
+            <div class="color-box" id="color-box">Наведи курсор</div>
+            <div id="mouse-output" class="output">Координаты мыши:</div>
+          </div>
+        </div>
+
+        <!-- Задача 2: События клавиатуры -->
+        <div class="task-area" id="task2">
+          <h3>Задача 2: События клавиатуры</h3>
+          <div class="keyboard-demo">
+            <input
+              type="text"
+              id="key-input"
+              placeholder="Нажмите любую клавишу..."
+            />
+            <div id="key-output" class="output">Информация о клавише:</div>
+          </div>
+        </div>
+
+        <!-- Задача 3: Делегирование событий -->
+        <div class="task-area" id="task3">
+          <h3>Задача 3: Делегирование событий</h3>
+          <div class="delegation-demo">
+            <button id="add-item-btn">Добавить элемент</button>
+            <div id="delegation-output" class="output">
+              Выбрано элементов: 0
+            </div>
+
+            <div class="item-list" id="item-list">
+              <div class="item" data-id="1">
+                <span>Элемент 1</span>
+                <span class="delete">Удалить</span>
+              </div>
+              <div class="item" data-id="2">
+                <span>Элемент 2</span>
+                <span class="delete">Удалить</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Задача 4: Предотвращение поведения -->
+        <div class="task-area" id="task4">
+          <h3>Задача 4: Предотвращение поведения</h3>
+          <div class="prevention-demo">
+            <a href="https://example.com" id="prevent-link" class="prevent-link"
+              >Перейти по ссылке</a
+            >
+
+            <form id="prevent-form" class="prevent-form">
+              <input
+                type="text"
+                id="form-input"
+                placeholder="Введите ссылку (например, google.com)."
+              />
+              <button type="submit">Отправить</button>
+            </form>
+            <div id="prevention-output" class="output">
+              Здесь будет результат
+            </div>
+          </div>
+        </div>
+
+        <!-- Задача 5: Кастомные события -->
+        <div class="task-area" id="task5">
+          <h3>Задача 5: Кастомные события</h3>
+          <div class="custom-demo">
+            <button id="trigger-custom">Запустить кастомное событие</button>
+            <button id="multiple-listeners">
+              Проверить несколько слушателей
+            </button>
+            <div id="custom-output" class="output">
+              Ожидание кастомного события...
+            </div>
+          </div>
+        </div>
+
+        <!-- Задача 6: Загрузка и ошибки -->
+        <div class="task-area" id="task6">
+          <h3>Задача 6: События загрузки и ошибок</h3>
+          <div class="loading-demo">
+            <button id="load-image">Загрузить изображение</button>
+            <button id="load-error">Симулировать ошибку</button>
+            <div id="image-container" class="image-container"></div>
+            <div id="loading-output" class="output">Статус загрузки:</div>
+          </div>
+        </div>
+
+        <!-- Задача 7: Таймеры и асинхронные события -->
+        <div class="task-area" id="task7">
+          <h3>Задача 7: Таймеры и оптимизация</h3>
+          <div class="timer-demo">
+            <button id="start-timer">Запустить таймер</button>
+            <button id="stop-timer">Остановить таймер</button>
+            <button id="debounce-btn">Тест Debounce</button>
+            <button id="throttle-btn">Тест Throttle</button>
+
+            <div id="timer-output" class="output">Таймер: 0с</div>
+            <div id="async-output" class="output">Асинхронные события:</div>
+          </div>
+        </div>
+
+        <!-- Блок для тестов -->
+        <div id="test-results" style="margin-top: 2rem">
+          <h2
+            style="
+              color: #2c3e50;
+              border-bottom: 2px solid #ecf0f1;
+              padding-bottom: 10px;
+              margin-bottom: 20px;
+            "
+          >
+            Результаты автотестов
+          </h2>
+          <div id="test-container"></div>
+        </div>
+      </section>
+
+      <footer id="main-footer">
+        <p>Проверьте консоль для тестирования</p>
+      </footer>
+    </div>
+
+    <script src="events-tasks.js"></script>
+    <script src="events-tests.js"></script>
+  </body>
+</html>
