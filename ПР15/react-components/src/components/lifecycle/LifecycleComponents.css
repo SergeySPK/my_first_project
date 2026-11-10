@@ -1,0 +1,13 @@
+.lifecycle-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+.timer-display {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f766e;
+  margin: 10px 0;
+}
