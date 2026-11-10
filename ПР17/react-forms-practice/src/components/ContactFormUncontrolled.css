@@ -1,0 +1,293 @@
+/* Контейнер */
+.uncontrolled-container {
+  padding: 24px;
+  border: 2px solid #0f766e;
+  margin: 10px;
+  border-radius: 10px;
+  background: #f0fdfa;
+}
+
+.form-title {
+  color: #0f766e;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Информационный блок */
+.info-block {
+  background: #ccfbf1;
+  border-left: 4px solid #14b8a6;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-block h3 {
+  color: #0f766e;
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.info-block ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.info-block li {
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.info-block code {
+  background: #99f6e4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #0f766e;
+}
+
+/* Форма */
+.contact-form {
+  max-width: 520px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  min-height: 100px;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+}
+
+/* Счётчик символов */
+.char-counter {
+  text-align: right;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Кнопки */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  padding: 11px 24px;
+  background: #14b8a6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  background: #0d9488;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  padding: 11px 24px;
+  background: #e2e8f0;
+  color: #1e293b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+/* Блок успеха */
+.success-block {
+  margin-top: 24px;
+  background: #ecfdf5;
+  border: 2px solid #10b981;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 auto 15px;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.success-block h3 {
+  color: #065f46;
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+/* Отображение отправленных данных */
+.submitted-data {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  border: 1px solid #a7f3d0;
+}
+
+.data-row {
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 12px;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.data-label {
+  font-weight: 600;
+  color: #0f766e;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.data-value {
+  color: #1e293b;
+  word-break: break-word;
+}
+
+/* Ошибка - красная обводка */
+.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2;
+  animation: shake 0.3s ease-in-out;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* Сообщения об ошибках */
+.error-message {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 5px;
+  padding-left: 2px;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .uncontrolled-container {
+    padding: 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .data-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
