@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1de;
+  color: #3d405b;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #2d6a4f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(45, 106, 79, 0.2);
+}
+
+.form-section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #2d6a4f;
+}
+
+.form-section h2 {
+  color: #1b4332;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #e9f5db;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2d6a4f;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d8f3dc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #40916c;
+}
+
+/* Стили для радио и чекбоксов */
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.radio-group label, .checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Ошибки валидации */
+.error-message {
+  color: #d90429;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+input.input-error, select.input-error {
+  border-color: #d90429;
+  background-color: #ffe3e3;
+}
+
+button.submit-btn {
+  background: #40916c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+button.submit-btn:hover {
+  background: #2d6a4f;
+}
