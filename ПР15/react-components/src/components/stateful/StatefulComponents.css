@@ -1,0 +1,24 @@
+.stateful-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+.stateful-box input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.counter-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+.error-text {
+  color: #ef4444;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
