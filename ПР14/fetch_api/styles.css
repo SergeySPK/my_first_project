@@ -1,0 +1,234 @@
+/* Базовый сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #334155;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Шапка */
+header {
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #f97316;
+}
+
+header h1 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* Карточки заданий */
+.task-area {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #f97316;
+}
+
+.task-area h3 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+/* Кнопки */
+button {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin: 0.25rem;
+  box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);
+}
+button:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+}
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Блоки вывода */
+.output {
+  background: #f8fafc;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #f97316;
+  font-family: "Courier New", monospace;
+  min-height: 40px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.output.success {
+  border-left-color: #10b981;
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.output.error {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+/* Контейнеры для данных */
+.data-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #ffffff;
+}
+
+.user-card,
+.post-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+.user-card h4,
+.post-card h4 {
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+.user-card p,
+.post-card p {
+  color: #64748b;
+  margin: 2px 0;
+}
+
+/* Спиннер */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Прогресс-бар (Задача 7) */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Стили для тестов */
+#test-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.test-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #ccc;
+}
+.test-card.pass {
+  border-left-color: #10b981;
+  background: #f0fdf4;
+}
+.test-card.fail {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.test-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.pass .test-badge {
+  background: #d1fae5;
+  color: #065f46;
+}
+.fail .test-badge {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.test-details {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  color: #555;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  color: #64748b;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
